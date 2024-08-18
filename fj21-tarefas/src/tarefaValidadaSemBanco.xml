@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- para fazer o link entre o xsd e o xml se usa o namespace (xmlns) -->
+<!-- dentro da definicao dele, apelidamos de xsi (xml schema instance) -->
+<!-- e passamos a url de referencia: o namespace do xsd + '-instance' -->
+<!-- depois se passa a localizacao do arquivo xsd com o apelido do ns -->
+<!-- atraves do atributo :noNamespaceSchemaLocation -->
+<tarefa  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="validaTarefaSemBanco.xsd">
+    <descricao>tarefa 2</descricao>
+    <finalizado>false</finalizado>
+    <dataFinalizacao>2015-06-03T14:17:17.622-03:00</dataFinalizacao>
+</tarefa>

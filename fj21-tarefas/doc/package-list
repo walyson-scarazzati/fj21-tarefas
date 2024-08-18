@@ -1,0 +1,6 @@
+br.com.caelum.tarefas.ConnectionFactory
+br.com.caelum.tarefas.controller
+br.com.caelum.tarefas.dao
+br.com.caelum.tarefas.interceptor
+br.com.caelum.tarefas.jpa
+br.com.caelum.tarefas.model

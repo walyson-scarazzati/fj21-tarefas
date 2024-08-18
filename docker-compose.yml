@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  mysqldb:
+    container_name: tarefaMysqldb5.7
+    image: "mysql:5.7"
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: tarefa
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - ./tarefa.sql:/docker-entrypoint-initdb.d/tarefa.sql

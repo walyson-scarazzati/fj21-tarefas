@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tarefa>
+    <descricao>hello</descricao>
+    <finalizado>true</finalizado>
+    <dataFinalizacao>2015-06-03T14:17:17.622-03:00</dataFinalizacao>
+</tarefa>

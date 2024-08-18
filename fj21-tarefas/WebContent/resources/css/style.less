@@ -1,0 +1,58 @@
+// É interessante trabalhar com 2 arquivos less um para as funções e outro para o estilo 
+// utilizando as funções atraves de imports
+
+
+//Exemplo de import less 
+// @import 'resources/css/style.less'; // quando está em pastas diferentes
+// @import "styleFunc.less"; // quando está na mesma pasta
+
+//Variables
+@colorLink: #06C;
+
+//Funções
+.radius(@corner: 5px){ //recebe o valor do raio
+border-radius: @corner;
+-moz-border-radius:@corner;
+-webkit-border-radius:@corner;
+-o-border-radius:@corner;
+}
+
+//Estilos
+h2 a{
+ color: @colorLink;
+}
+
+p{
+background:#333;
+padding:10px;
+color: @colorLink;
+.radius(50px); //ele pega a função e coloca o valor do raio
+}
+
+//Como personalizar no CSS e no less
+//CSS
+h2{
+font:bold 50px Arial;
+}
+h2 a{
+color: orange;
+}
+
+//less deixa isto mais estruturado fica mais fácil
+h2{
+font:bold 50 arial;
+	a{
+		color:orange;
+	 }
+}
+//agora quero fazer um hover para o "a"
+h2{
+font:bold 50 arial;
+	a{
+		color:orange;
+	 }
+	 	//vou herdar "a"
+	 	&:hover{
+	 	text-decoration:none 
+		 }           
+}
